@@ -2,7 +2,6 @@ on:
   push: {}
   workflow_dispatch: {}
   workflow_call: {}
-  workflow_run: {}
 
 jobs:
   run-test:
