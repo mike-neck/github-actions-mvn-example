@@ -1,11 +1,17 @@
 package com.example.demo.models;
 
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class DefaultRuleTest {
+
+    @Test
+    void throwsException() throws ClassNotFoundException {
+        Class.forName("unknwon.class.Name");
+    }
 
     @ParameterizedTest
     @CsvSource(textBlock = """
